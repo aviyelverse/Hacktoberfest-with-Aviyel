@@ -1,3 +1,7 @@
+
+![Banner](https://user-images.githubusercontent.com/37651620/193734265-4ea25cbf-3acc-4a28-9ef6-e3c53cf7bfad.png)
+
+
 ## Introduction 
 
 We’re excited to announce that we will be taking part in this year’s [Hacktoberfest](https://hacktoberfest.com/about/#low-or-non-code)! We’re kicking off the event with a special party for our members. If you’ve been thinking about joining us and haven’t yet, now is your chance! There are going to be lots of fun—and surprises—in store for you at this celebration so don’t miss out on it!
