@@ -25,3 +25,6 @@ In this first week of the hacktoberfest:
     
 ---
 
+## Contribution Guideline:
+
+To initiate a contribution, we recommend that you first fork this repo and then head over to the corresponding weeks folder. Create a markdown file with your full_name on it (for example: "pramit.md") and add the link of Google Docs there and then submit Pull Request(PR)
