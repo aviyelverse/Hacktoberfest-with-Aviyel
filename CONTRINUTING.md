@@ -9,7 +9,7 @@ We recognize contributions in two forms:
 
 ### To initiate a contribution, we recommend you to: 
 1. Fork this repo and then head over to the corresponding weeks folder. 
-2. Create a markdown file with your full_name on it (for example: "pramitmarattha.md") {check this [sample](https://github.com/aviyelverse/Hacktoberfest-with-Aviyel/blob/main/week-1/pramitmarattha.md)}
+2. Create a markdown file with your `full_name_projectname` on it (for example: "pramitmarattha_metacall.md") {check this [sample](https://github.com/aviyelverse/Hacktoberfest-with-Aviyel/blob/main/week-1/pramitmarattha.md)}
 3. Add the link of Google Docs there.
 4. Tag your issue (the one related to the title)
 5. Finally, submit your Pull Request(PR)
