@@ -165,7 +165,6 @@ The rules for Hacktoberfest are simple:
 - October 19th, 2022, Wednesday (08:30 am EST): **Closer look at Tolgee with [Jan cizmar](https://twitter.com/jeniksoft).**
 - October 19th, 2022, Wednesday (01:30 am EST): **Closer look at Testsigma with [Amit Savyasachi](https://www.linkedin.com/in/amit-savyasachi-755880172/).**
 - October 21st, 2022, Friday (01:30 am EST): **Closer look at Novu with [Emil Pearce](https://twitter.com/iampearceman).**
-- More to follow…
 
 ---
 
