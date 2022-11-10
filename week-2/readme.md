@@ -14,8 +14,6 @@ In this second week of the Hacktoberfest, the host will be covering a lot of gen
 **Week 2 (Streamlining technical content creation):**
 
 - October 10th, 2022, Monday (12:30 pm EST): **Master the art of content creation with [Harsh Bardhan Mishra](https://www.linkedin.com/in/harshcasper/).**
-- October 11th, 2022, Monday (12:30 pm EST): **Master the art of content creation with [Tapas Adhikary](https://twitter.com/tapasadhikary).**
 - October 12th, 2022, Wednesday (01:00 pm EST): **Master the art of content creation with [Yuri](https://twitter.com/yuricodesbot).**
-- October 13th, 2022, Thursday (01:00 pm EST): **Master the art of content creation with [Dishi Mehta](https://twitter.com/dbmehta2).**
 
 ---
