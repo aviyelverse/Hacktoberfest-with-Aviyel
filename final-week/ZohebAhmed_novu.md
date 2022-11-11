@@ -1,3 +1,5 @@
+Link to the Article => https://aviyel.com/post/3866/
+
 ## Introduction:
 
 Novu, described in the [official documentation](https://docs.novu.co/overview/introduction/) as a "notification infrastructure," is built to enable engineering teams to build rich notification experiences without constantly reinventing them.
