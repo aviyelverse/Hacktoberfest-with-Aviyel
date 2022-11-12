@@ -1,0 +1,1 @@
+[Benefits_and_drawbacks_of_writing_polyglot_applications.md](https://github.com/Khushalsarode/Hacktoberfest-with-Aviyel/files/9995352/Benefits_and_drawbacks_of_writing_polyglot_applications.md)
