@@ -13,7 +13,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        respondableId: ${{ github.event.issue.node_id }}
+        respondableId: ${{ github.event.pull_request.node_id }}
         response: "<p align='center'><img width='500' alt='hacktoberfest' src='https://user-images.githubusercontent.com/37651620/201538083-43263c22-8e50-4dd7-9ac4-9f6fff0c59ba.png'></p> <div align='center'><h3>🎃✨ Thank you so much for your contribution @${{ github.event.pull_request.user.login }} !! ✨🎃<br> 🎖️ We will review your PR as soon as possible! 🎖️</h3></div>"
         author: ${{ github.event.pull_request.user.login }}
         exemptedAuthors: "Aviyelverse"
