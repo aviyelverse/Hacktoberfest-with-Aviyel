@@ -1,0 +1,146 @@
+# **Introduction.**
+
+## **What is chatwoot?**
+
+Chatwoot is an open source software built to interact and engage with Customers, serving as an alternative to Zendesk, Live-Chat and some other softwares. It's great for delivering a delightful Customer experience—and it also improves your support team's productivity & resilience! In addition, it provides real-time data and analytics, so you always know what to do next.
+
+Chatwoot allows for quick and simple interactions with customers, which results in better service delivery. Customers find it simple to use because it is integrated into the website's interface and appears on the website whenever a customer logs in.
+
+You can use the Chatwoot live-Chat feature in your business through various channels such as email, website live-chat, Twitter, Facebook, and many more.
+
+Chatwoot also provides a well-synchronized dashboard that consolidates all of your conversations from various channels into a single dashboard from which you can seamlessly monitor your conversations.
+
+## What is React?
+
+React is a declarative, effective, and adaptable JavaScript user interface library. It allows you to create complex user interfaces out of discrete, small chunks of code known as "components." There are several types of components in React. In this tutorial, we will integrate custom Chatwoot with our React Application.
+
+# Building your Application:
+
+## What is Code Sandbox?
+
+CodeSandbox is a platform for quickly sharing and launching front-end JavaScript apps. That sounds similar to CodePen and JSFiddle, but CodeSandbox is a more focused project that provides full-stack support for JavaScript only. This [[demo app](https://codesandbox.io/s/chatwoot-demo-509ob6?file=/components/chatwoot.js)](https://codesandbox.io/s/chatwoot-demo-509ob6?file=/components/chatwoot.js) was created with Code Sandbox; you can fork the Sandbox to get your own copy of the app. You can also create your React app on your desktop and build from it. To do so, run `npx create-react-app app-name`, which will create the App and installs all the dependencies required for it to run. Once the App is successfully created, change the directory to this new App using `cd` and start the App using `npm start`.
+
+# Create a new account with ChatWoot.
+
+![image](https://user-images.githubusercontent.com/82748195/202460396-d6b28466-8ae0-48f8-bdbb-22e0dc6ff409.png)
+
+
+![image](https://user-images.githubusercontent.com/82748195/202460608-142980b3-a26a-48f6-ae07-cc21f3808bf9.png)
+
+
+# Chatwoot Dashboard.
+
+After you have created your account, this is how the dashboard will appear. You can then continue with further steps.
+
+![image](https://user-images.githubusercontent.com/82748195/202460730-a71823d7-0e4a-4834-9188-1953adaabc49.png)
+
+
+## 1). Create an inbox.
+
+The next step is to create an inbox for your preferred channel; in this tutorial, we will use a website as our inbox channel.
+
+![image](https://user-images.githubusercontent.com/82748195/202462096-7415279b-cc56-4b2b-b101-97601b95f0df.png)
+
+
+## 2). Select “Website” as the channel to use.
+
+To complete the configuration, choose the Website channel as shown below.
+
+![image](https://user-images.githubusercontent.com/82748195/202462258-dd459f89-a910-40f8-8afe-cd8b3aa88831.png)
+
+## 3). Add your Website details in the form provided below.
+
+In order to successfully create your inbox, you must provide the name of your website and the domain name for it. You may also include optional details like the heading and tagline for your live chat.
+
+![image](https://user-images.githubusercontent.com/82748195/202462460-b8fb7019-8fc1-4589-907e-0a190ed563f0.png)
+
+## 4). Add an Agent to your inbox.
+
+Add an agent to handle each inbox you create; the agents can come from different departments within the company; for instance, a financial officer can handle any customer complaints about finances, another can handle user experience, and so on. You can add yourself as an agent to each of your organization's inboxes in order to have access to all of it.
+
+![image](https://user-images.githubusercontent.com/82748195/202462533-ba56e8f8-9c5c-4126-b767-8f35a63bc734.png)
+
+That's all; your inbox has been successfully created, and you’re good to go.
+
+![image](https://user-images.githubusercontent.com/82748195/202462587-9ce61a74-7576-4797-9b83-eae54c4bdbc6.png)
+
+## Importing the chatwoot component
+
+To enable this live-chat feature on your React Application, create a file called `chatwoot.js`, import that file into `App.js`, and then add the chatwoot widget settings to your App as shown below. You can also customize the chatwoot widget as you see fit; check the chatwoot docs for more detailed information.
+
+NoneBashCSSCC#GoGitHTMLObjective-CJavaJavaScriptJSONMongo DBPerlPHPPowershellPythonReact JSXReact TSXPugRegexRubyRustScssSmaliSQLTypeScriptYAML
+
+```
+// Chatwoot.js
+import React from "react";
+class ChatwootWidget extends React.Component {
+  componentDidMount() {
+    window.chatwootSettings = {
+      hideMessageBubble: false,
+      position: "right", // This can be left or rightlocale: "en",
+      // Language to be set
+      type: "standard", // [standard, expanded_bubble]
+    };
+  }
+  render() {
+    return null;
+  }
+}
+export default ChatwootWidget;
+```
+
+## Chatwoot configuration
+
+The next step in getting your live-chat feature up and running is to paste the channel code into the chatwoot.js file you created in your app's `components` folder, but make sure you don't include the `<script>` tags.
+
+![image](https://user-images.githubusercontent.com/82748195/202462916-9e4cdba6-11c8-4068-957d-f25d357c28e5.png)
+
+
+After completing all of these steps, your Chatwoot.js file (ChatwootWidget component) should resemble the code snippet below. Once you have successfully integrated that, a live chat popup should appear whenever a user logs onto your website.
+
+NoneBashCSSCC#GoGitHTMLObjective-CJavaJavaScriptJSONMongo DBPerlPHPPowershellPythonReact JSXReact TSXPugRegexRubyRustScssSmaliSQLTypeScriptYAML
+
+```
+// chatwoot.js
+import React from "react";
+
+class ChatwootWidget extends React.Component {
+  componentDidMount() {
+    window.chatwootSettings = {
+      hideMessageBubble: false,
+      position: "right", // This can be left or right
+      locale: "en", // Language to be set
+      type: "standard", // [standard, expanded_bubble]
+    };
+    (function (d, t) {
+      var BASE_URL = "https://app.chatwoot.com";
+      var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+      g.src = BASE_URL + "/packs/js/sdk.js";
+      g.defer = true;
+      g.async = true;
+      s.parentNode.insertBefore(g, s);
+      g.onload = function () {
+        window.chatwootSDK.run({
+          websiteToken: "vf2UF4Khej3JZDeJYYQeELEo",
+          baseUrl: BASE_URL,
+        });
+      };
+    })(document, "script");
+  }
+
+  render() {
+    return null;
+  }
+}
+
+export default ChatwootWidget;
+```
+
+By visiting your site, you can now test your live chat feature, which will appear as shown below.
+
+![image](https://user-images.githubusercontent.com/82748195/202463028-024a674d-1fb7-44b7-9e2b-e1c356c417fa.png)
+
+# Conclusion.
+
+Chatwoot was built with several distinctive features primarily aimed at making the developer's job easier while also giving customer support representatives and users a better experience. In this tutorial, we have learned about Chatwoot and how important it is for companies to use a live-chat solution on their Website. We've also learned how to integrate Chatwoot into our React Application from absolute scratch.
