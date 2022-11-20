@@ -1,4 +1,6 @@
-**Introduction**
+Link to article => https://aviyel.com/post/3846/how-to-deploy-a-react-project-on-netlify
+
+# Introduction
 
 [[Netlify](https://www.netlify.com/)] is a developer’s platform designed for building and deploying web applications, e-commerce stores, and online campaigns. Netlify provides an easy-to-use and easy-to-maintain website deployment service for developers, and this gives them a high level of [[scalability](https://www.techtarget.com/searchdatacenter/definition/scalability)] and security.
 
